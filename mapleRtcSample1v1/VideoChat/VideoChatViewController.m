@@ -82,6 +82,11 @@
     [self.mBMediaKit leaveChannel];
 }
 
+- (void)rtcEngine:(BMediaKit *)engine onAudioVolumeIndication:(NSDictionary* _Nonnull)volumeInfo totalVolume:(NSInteger)volume
+{
+    //NSLog(@"transfer audio category ");
+}
+
 - (void)rtcEngine:(BMediaKit *)engine onUserJoinedNotice:(NSArray *)uids{
     
     for(id obj in uids){
